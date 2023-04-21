@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@300&display=swap');
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+body{
+    background: rgb(85, 78, 70);
+}
+
+#container{
+    position: relative;
+    background: #fff;
+    background-image: url(/9b4a2c5f-eede-4c46-a6cc-bafc7cbe2ad5.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    top: 0;
+}
+
+#img-agenda {
+    
+    border-radius: 50%;
+    width: 30px;
+    height: 40px;
+   
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    top: 15px;
+    color: #000;
+    font-family: 'Parisienne', cursive;
+    font-size: 30px;
+}
+
+#input-tarefa {
+    height: 50px;
+    padding: 0 5px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    margin: 0 5px;
+    border: 0.01px solid rgba(181, 176, 176, 0.1);
+    background-color: rgba(122, 98, 98, 0.1);
+    /* cor de fundo com transparência */
+    backdrop-filter: blur(15px);
+    /* desfoca o conteúdo por trás */
+    color: #fff;
+    outline: none;
+
+}
+
+#input-tarefa::placeholder{
+    color: #fff;
+}
+
+#btn-adicionar {
+    background: radial-gradient(closest-corner at 35% 40%, rgba(236, 234, 234, 0.9), transparent), green;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+ul {
+    list-style: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    width: 90%;
+    left: -50px;
+}
+
+li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+    border: 0.01px solid rgba(181, 176, 176, 0.1);
+    background-color: rgba(122, 98, 98, 0.1);
+    /* cor de fundo com transparência */
+    backdrop-filter: blur(20px);
+    /* desfoca o conteúdo por trás */
+    padding: 0 40px 0 10px;
+    height: 75px;
+    border-radius: 10px;
+    color: #0a0a0a;
+    overflow: hidden;
+    font-family: 'Days One', sans-serif;
+    font-size: 12px;
+
+}
+
+.btn-lixeira {
+    position: absolute;
+    border-radius: 50%;
+    font-size: 15px;
+    background: radial-gradient(closest-corner at 35% 40%, rgba(236, 234, 234, 0.9), transparent), red;
+    border: none;
+    color: #090808;
+    padding: 10px;
+    cursor: pointer;
+    left: 90%;
+   
+
+}
+
+span {
+    position: absolute;
+    color: #000;
+    top: 25px;
+    font-size: 10px;
+    font-family: 'Nanum Pen Script', cursive;
+    background-color: #ede5e5;
+    padding: 0 3px;
+    border-radius: 10px;
+    top: 80%;
+
+}
+
+@media screen and (min-width: 17em) {
+    .btn-lixeira {
+        position: absolute;
+        left: 83%;
+    }
+
+    li {
+        padding: 0 50px 0 10px;
+    }
+}
+
+@media screen and (min-width: 25em) {
+    .btn-lixeira {
+        position: absolute;
+        left: 90%;
+    }
+
+    li {
+        padding: 0 50px 0 10px;
+    }
+
+    #container{
+        background-position: center top;
+        max-width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 31em) {
+
+    ul {
+        width: 490px;
+    }
+
+    .btn-lixeira {
+        left: 90%;
+    }
+
+    #input-tarefa {
+        width: 455px;
+    }
+   
+}
