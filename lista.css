@@ -18,6 +18,8 @@
 }
 body{
     background: rgb(85, 78, 70);
+    
+    
 }
 
 #container{
@@ -29,6 +31,7 @@ body{
     background-position: center;
     height: 100vh;
     top: 0;
+    
 }
 
 #img-agenda {
@@ -43,7 +46,8 @@ h1 {
     position: relative;
     text-align: center;
     top: 15px;
-    color: #000;
+    color: #fff;
+    text-shadow: 2px 2px 3px #1e99a7;
     font-family: 'Parisienne', cursive;
     font-size: 30px;
 }
@@ -55,7 +59,7 @@ h1 {
     border-radius: 10px;
     border: none;
     margin: 0 5px;
-    border: 0.01px solid rgba(181, 176, 176, 0.1);
+    border: 0.01px solid rgba(181, 176, 176, 0.3);
     background-color: rgba(122, 98, 98, 0.1);
     /* cor de fundo com transparência */
     backdrop-filter: blur(15px);
@@ -100,14 +104,15 @@ li {
     justify-content: space-between;
     align-items:center;
     margin: 15px 0;
-    border: 0.01px solid rgba(181, 176, 176, 0.1);
+    border: 1px solid rgba(181, 176, 176, 0.1);
     background-color: rgba(122, 98, 98, 0.1);
     /* cor de fundo com transparência */
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(30px);
     /* desfoca o conteúdo por trás */
     height:85px;
     border-radius: 10px;
     color: #0a0a0a;
+    
     overflow: hidden;
     font-family: 'Days One', sans-serif;
     font-size: 12px;
@@ -130,13 +135,14 @@ li {
 
 span {
     position: absolute;
-    color: #000;
-    font-size: 15px;
+    color: #fff;
+    text-shadow: 2px 2px 4px #1e99a7;
+    font-size: 12px;
     font-family: 'Nanum Pen Script', cursive;
-    background-color: #ede5e5;
+    background-color: rgba(6, 106, 113, 0.9);
     padding: 0 3px;
     border-radius: 10px;
-    top: 60%;
+    top: 65%;
     margin: 10px 0;
     left: 5%;
 
